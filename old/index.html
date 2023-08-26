@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diablo IV Trophy Progress</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+<div id="left">
+    <h1>Recent</h1>
+</div>
+
+
+<script src="./data.js"></script>
+<script>
+  const getTrophyList = (gameId) => {
+    const games = data;
+    const filteredGames = games.filter((game) => game.gameId === gameId);
+    const trophyList = filteredGames[0].trophyList;
+    return trophyList;
+  };
+  
+  const trophyList = getTrophyList('NPWR22810_00');
+  console.log(trophyList);
+</script>
+  </body>
+</html>
