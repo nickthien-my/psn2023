@@ -1,0 +1,191 @@
+body {
+    font-family: Helvetica, sans-serif;
+    width: 1920px;
+    height: 1080px;
+    color: white;
+}
+
+#left {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: 1000px;
+    float: left;
+    padding: 20px 20px;
+    margin: 20px 20px 0px 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+  }
+
+#middle {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#progress {
+    width: 1200px;
+    height: 80px;
+    margin: 20px 0;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+#gameplay {
+    width: 1280px;
+    height: 720px;
+    background: black;
+  }
+
+  #carousel {
+    width: 1120px;
+    height: 160px;
+    margin-top: 20px;
+    padding: 0px 80px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+  }
+
+#right {
+    float: left;
+    position: relative;
+    width: 240px;
+    height: 1000px;
+    float: right;
+    padding: 20px 20px;
+    margin: 20px 20px 0 0;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+  }
+
+#progressHeader {
+    width: 200px;
+    padding: 40px 40px;
+    margin-right: 40px;
+  }
+
+.progressBar {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid rgba(200, 200, 200, 0.75);
+  }
+
+.progressCell {
+    height: 30px;
+    float: left;
+  }
+
+  
+  .listTrophies {
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 70px;
+margin-bottom: 20px;
+  }
+  
+  .bronze {
+    /* background: linear-gradient(135deg,rgba(205, 127, 50, 0.9),  rgba(0, 0, 0, 0.9)); */
+    /* background: radial-gradient(
+      circle at 10px 10px,
+      rgba(173, 138, 86, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ); */
+    background: linear-gradient(to bottom, rgba(144,89,35,0.9), rgba(205, 127, 50, 0.9), rgba(47, 29, 12, 0.9));
+  
+  }
+  
+  .silver {
+    /* background: linear-gradient(135deg,rgba(165, 165, 165, 0.9),  rgba(0, 0, 0, 0.9)); */
+    /* background: radial-gradient(
+      circle at 10px 10px,
+      rgba(165, 165, 165, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ); */
+    background: linear-gradient(to bottom, rgba(154, 154, 154, 0.9), rgba(192, 192, 192, 0.9), rgba(25, 25, 25, 0.9));
+  
+  }
+  
+  .gold {
+    /* background: linear-gradient(135deg, rgba(255, 215, 0, 0.9), rgba(0, 0, 0, 0.9)); */
+    /* background: radial-gradient(
+      circle at 45px 20px,
+      rgba(255, 215, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ); */
+    background: linear-gradient(to bottom, rgba(179, 151, 0, 0.9), rgba(255, 215, 0, 0.9), rgba(59, 65, 0, 0.9));
+  }
+  
+  .platinum {
+    background: linear-gradient(135deg, rgba(229, 228, 226, 0.9), rgba(0, 0, 0, 0.9));
+    /* background: radial-gradient(
+      circle at 10px 10px,
+      rgba(229, 228, 226, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ); */
+  }
+  
+  .not {
+    /* background: rgba(65, 65, 65, 0.9); */
+    /* background: radial-gradient(
+      circle at 10px 10px,
+      rgba(27, 27, 27, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ); */
+    background: linear-gradient(to bottom, rgba(120, 120, 120, 0.9), rgba(0, 0, 0, 0.9));
+  
+  }
+  
+  ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+  
+  li .trophy-top {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  li img {
+    width: 60px;
+    margin-right: 20px;
+  }
+
+  .remainderImg {
+    width: 75px;
+display: block;
+margin-top: 10px;
+margin-right: auto;
+margin-left: auto;
+
+  }
+  
+  li .trophyName {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  
+  li .trophyDescription {
+    font-size: 1em;
+    color: lightgray;
+    margin: -10px 0 30px 0;
+  }
+
+  li .carouselTrophyDescription {
+    font-size: 1.35em;
+    color: lightgray;
+    margin: 10px 0 30px 0;
+  }
+
+  

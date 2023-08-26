@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checklist</title>
+<style>
+.checklist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.checklist-item {
+  margin-bottom: 10px;
+}
+
+.checklist-item input {
+  margin-right: 10px;
+}
+
+.checklist-item label {
+  cursor: pointer;
+}
+
+.checklist-item input:checked + label {
+  text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+<div class="checklist">
+  <input type="checkbox" id="item-1">
+  <label for="item-1">Item 1</label>
+
+  <input type="checkbox" id="item-2">
+  <label for="item-2">Item 2</label>
+
+  <input type="checkbox" id="item-3">
+  <label for="item-3">Item 3</label>
+</div>
+
+<script>
+const checklist = document.querySelector(".checklist");
+
+const items = Array.from(checklist.querySelectorAll("input"));
+
+items.forEach(item => {
+  item.addEventListener("change", () => {
+    item.checked ? item.nextElementSibling.textContent = "Completed" : item.nextElementSibling.textContent = "Incomplete";
+  });
+});
+
+const saveData = () => {
+  const data = {
+    items: items.map(item => {
+      return {
+        id: item.id,
+        completed: item.checked
+      };
+    })
+  };
+
+  localStorage.setItem("checklistData", JSON.stringify(data));
+};
+
+checklist.addEventListener("change", saveData);
+
+if (localStorage.getItem("checklistData")) {
+  const data = JSON.parse(localStorage.getItem("checklistData"));
+
+  data.items.forEach(item => {
+    const checkbox = document.getElementById(item.id);
+    checkbox.checked = item.completed;
+  });
+}
+</script>
+</body>
+</html>

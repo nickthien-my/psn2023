@@ -1,0 +1,170 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080p;
+  color: white;
+}
+
+.column {
+  height: 1080px;
+
+  margin: -15px 30px 0 30px;
+}
+
+.left {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  left: 0px;
+}
+
+.leftCenter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0px;
+}
+
+.right {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  right: 0px;
+}
+
+.rightCenter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0px;
+}
+
+
+.mainHeader {
+  /* margin: 0 0 10px 40px; */
+}
+
+.trophyInfo {
+  width: 330px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.chartTop {
+  width: 1920px;
+}
+
+.waffleChart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0 5px 10px;
+}
+
+.waffleChartTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.waffle-cell {
+  margin-top: 20px;
+  height: 15px;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+/* .trophy {
+  height: 125px;
+  width: 400px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.9);
+} */
+
+.trophy-list {
+  width: 300px;
+  /* padding: 0px 10px 0 0; */
+}
+
+.bronze {
+  /* background: linear-gradient(135deg,rgba(205, 127, 50, 0.9),  rgba(0, 0, 0, 0.9)); */
+  /* background: radial-gradient(
+    circle at 10px 10px,
+    rgba(173, 138, 86, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); */
+  background: linear-gradient(to bottom, rgba(144,89,35,0.9), rgba(205, 127, 50, 0.9), rgba(47, 29, 12, 0.9));
+
+}
+
+.silver {
+  /* background: linear-gradient(135deg,rgba(165, 165, 165, 0.9),  rgba(0, 0, 0, 0.9)); */
+  /* background: radial-gradient(
+    circle at 10px 10px,
+    rgba(165, 165, 165, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); */
+  background: linear-gradient(to bottom, rgba(154, 154, 154, 0.9), rgba(192, 192, 192, 0.9), rgba(25, 25, 25, 0.9));
+
+}
+
+.gold {
+  /* background: linear-gradient(135deg, rgba(255, 215, 0, 0.9), rgba(0, 0, 0, 0.9)); */
+  /* background: radial-gradient(
+    circle at 45px 20px,
+    rgba(255, 215, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); */
+  background: linear-gradient(to bottom, rgba(179, 151, 0, 0.9), rgba(255, 215, 0, 0.9), rgba(59, 65, 0, 0.9));
+}
+
+.platinum {
+  background: linear-gradient(135deg, rgba(229, 228, 226, 0.9), rgba(0, 0, 0, 0.9));
+  /* background: radial-gradient(
+    circle at 10px 10px,
+    rgba(229, 228, 226, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); */
+}
+
+.not {
+  /* background: rgba(65, 65, 65, 0.9); */
+  /* background: radial-gradient(
+    circle at 10px 10px,
+    rgba(27, 27, 27, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); */
+  background: linear-gradient(to bottom, rgba(65, 65, 65, 0.9), rgba(0, 0, 0, 0.9));
+
+}
+
+ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+li .trophy-top {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li img {
+  width: 60px;
+  margin: 0 25px 0 0;
+}
+
+li .trophyName {
+  font-size: 1.5em;
+  color: white;
+}
+
+
+li p {
+  font-size: 1.2em;
+  color: lightgray;
+}

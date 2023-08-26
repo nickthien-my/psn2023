@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "psn-api": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0"
+  }
+}
