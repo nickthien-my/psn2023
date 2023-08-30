@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Diablo IV</title>
+  <link rel="stylesheet" href="../style2.css" />
+  <style>
+    #background {
+      position: absolute;
+      top: 0;
+      width: 1920px;
+      height: 1080px;
+      z-index: -1;
+      background-image: url("splash.png");
+      filter: blur(3px) brightness(50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="background"></div>
+
+  <div id="top">
+
+    <p class="infoText" id="earnedTrophies"></p>
+
+    <img class="trophy" src="platinum.png">
+
+    <p class="infoText" id="totalTrophies"></p>
+  </div>
+  <div id="left">
+    <div id="earnedList"></div>
+  </div>
+
+  <div id="right">
+    <div id="remainingList"></div>
+  </div>
+
+  <div id="bottom">
+    <div id="progressLights"></div>
+  </div>
+
+  <script src="../data.js"></script>
+  <script>
+    const getTrophyList = (gameId) => {
+      const games = data;
+      const filteredGames = games.filter((game) => game.gameId === gameId);
+      const trophyList = filteredGames[0].trophyList;
+      return trophyList;
+    };
+
+    const trophyData = getTrophyList('NPWR22810_00');
+
+    const trophyGroup = trophyData.filter(
+      (troGroup) => troGroup.groupId === "default"
+    );
+
+    console.log(trophyData);
+    console.log(trophyGroup);
+
+  </script>
+  <script src="../earnedTrophiesNumber.js"></script>
+  <script src="../totalTrophiesNumber.js"></script>
+  <script src="../recentTrophyVertical.js"></script>
+  <script src="../remainingTrophyVertical.js"></script>
+  <script src="../progressLights.js"></script>
+
+</body>
+
+</html>

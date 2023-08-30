@@ -55,7 +55,7 @@ function main() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    myNpsso = "w2I072pFUfq8Zbkr7DCEYuxBcWLzWMFaHxh7yclNMlgzVsbazFFyoUOOVyNcUTPf";
+                    myNpsso = "6tGY1FQcLdsc7sa7n1kP73QxqA8ALr7H6VX1KgIAHXPo44ZR74JueE8V20dnvIFm";
                     return [4 /*yield*/, (0, psn_api_1.exchangeNpssoForCode)(myNpsso)];
                 case 1:
                     accessCode = _a.sent();
@@ -127,6 +127,7 @@ var normalizeTrophy = function (trophy) {
         earnedOn: trophy.earned ? trophy.earnedDateTime : "unearned",
         type: trophy.trophyType,
         earnedRate: Number(trophy.trophyEarnedRate),
+        trophyIconUrl: trophy.trophyIconUrl,
         trophyName: trophy.trophyName,
         trophyDescription: trophy.trophyDetail,
         groupId: trophy.trophyGroupId

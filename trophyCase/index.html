@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+  body {
+    width: 1920px;
+  }
+  #trophyCase {
+padding: 20px;
+
+  }
+
+  .try {
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: left;
+  }
+</style>
+</head>
+<body>
+
+<div id="trophyCase"></div>
+
+</body>
+<script>
+var trophyCase = document.getElementById("trophyCase");
+var imgs = [];
+
+// Create an array of images.
+for (var i = 1; i <= 202; i++) {
+  var trophies = document.createElement('div');
+
+  var img = document.createElement("img");
+  img.classList.add("try");
+  img.src = "platinumTrophies/" + i + ".png";
+  imgs.push(img);
+}
+
+// Append the images to the trophy case.
+for (var i = 0; i < imgs.length; i++) {
+  trophyCase.appendChild(imgs[i]);
+};
+</script>
+
+</html>

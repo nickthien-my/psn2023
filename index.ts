@@ -15,7 +15,7 @@ import {
 async function main() {
   // 1. Authenticate and become authorized with PSN.
   // See the Authenticating Manually docs for how to get your NPSSO.
-  const myNpsso = "w2I072pFUfq8Zbkr7DCEYuxBcWLzWMFaHxh7yclNMlgzVsbazFFyoUOOVyNcUTPf";
+  const myNpsso = "6tGY1FQcLdsc7sa7n1kP73QxqA8ALr7H6VX1KgIAHXPo44ZR74JueE8V20dnvIFm";
   const accessCode = await exchangeNpssoForCode(myNpsso);
   const authorization = await exchangeCodeForAccessToken(accessCode);
 
@@ -101,6 +101,7 @@ const normalizeTrophy = (trophy: Trophy) => {
     earnedOn: trophy.earned ? trophy.earnedDateTime : "unearned",
     type: trophy.trophyType,
     earnedRate: Number(trophy.trophyEarnedRate),
+    trophyIconUrl: trophy.trophyIconUrl,
     trophyName: trophy.trophyName,
     trophyDescription: trophy.trophyDetail,
     groupId: trophy.trophyGroupId
