@@ -617,8 +617,8 @@ const data =
       },
       {
         "id": 23,
-        "isEarned": false,
-        "earnedOn": "unearned",
+        "isEarned": true,
+        "earnedOn": "2023-09-16T15:34:42Z",
         "type": "gold",
         "earnedRate": 1.1,
         "trophyIconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22810_00/0fb98e86-49b9-4fcc-9a0a-c732a9da3ad6.png",

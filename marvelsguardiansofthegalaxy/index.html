@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Marvel's Guardians of the Galaxy Trophy Progress</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marvel's Guardians of the Galaxy</title>
+  <link rel="stylesheet" href="../style2.css" />
   <style>
     #background {
       position: absolute;
@@ -12,7 +15,7 @@
       height: 1080px;
       z-index: -1;
       background-image: url("splash.png");
-      filter: blur(3px) brightness(75%);
+      filter: blur(3px) brightness(50%);
     }
   </style>
 </head>
@@ -20,24 +23,24 @@
 <body>
   <div id="background"></div>
 
+  <div id="top">
+
+    <p class="infoText" id="earnedTrophies"></p>
+
+    <img class="trophy" src="platinum.png">
+
+    <p class="infoText" id="totalTrophies"></p>
+  </div>
   <div id="left">
-    <h2>MOST RECENT</h2>
-    <div id="recentList"></div>
+    <div id="earnedList"></div>
   </div>
-  <div id="middle">
-    <div id="progress">
-      <div id="progressHeader">
-        <h1>PROGRESS</h2>
-      </div>
-      <div id="progress-bar">
-      </div>
-    </div>
-    <div id="gameplay"></div>
-    <div id="carousel"></div>
-  </div>
+
   <div id="right">
-    <h2>REMAINING</h2>
     <div id="remainingList"></div>
+  </div>
+
+  <div id="bottom">
+    <div id="progressLights"></div>
   </div>
 
   <script src="../data.js"></script>
@@ -51,16 +54,20 @@
 
     const trophyData = getTrophyList('NPWR21586_00');
 
-    const trophies = trophyData.filter(
-      (filteredGroup) => filteredGroup.groupId === "default"
+    const trophyGroup = trophyData.filter(
+      (troGroup) => troGroup.groupId === "default"
     );
-    console.log(trophies);
+
+    console.log(trophyData);
+    console.log(trophyGroup);
+
   </script>
-  <script src="../filters.js"></script>
-  <script src="../progressBar.js"></script>
-  <script src="../recentTrophy.js"></script>
-  <script src="../carousel.js"></script>
-  <script src="../remainingTrophy.js"></script>
+  <script src="../earnedTrophiesNumber.js"></script>
+  <script src="../totalTrophiesNumber.js"></script>
+  <script src="../recentTrophyVertical.js"></script>
+  <script src="../remainingTrophyVertical.js"></script>
+  <script src="../progressLights.js"></script>
+
 </body>
 
 </html>

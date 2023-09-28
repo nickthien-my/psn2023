@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Diablo IV</title>
+  <title>Mirror's Edge Catalyst</title>
   <link rel="stylesheet" href="../style2.css" />
   <style>
     #background {
@@ -27,7 +27,7 @@
 
     <p class="infoText" id="earnedTrophies"></p>
 
-    <img class="trophy" src="platinum.png">
+    <img class="trophy" src="gameLogo.png">
 
     <p class="infoText" id="totalTrophies"></p>
   </div>
@@ -52,7 +52,7 @@
       return trophyList;
     };
 
-    const trophyData = getTrophyList('NPWR22810_00');
+    const trophyData = getTrophyList('NPWR08193_00');
 
     const trophyGroup = trophyData.filter(
       (troGroup) => troGroup.groupId === "default"
